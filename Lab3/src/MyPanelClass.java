@@ -24,10 +24,13 @@ public class MyPanelClass extends JPanel
                 int height = y2 - y1;
 
                 //Paint the background
-                g.setColor(Color.GREEN);
+                g.setColor(Color.DARK_GRAY);
                 g.fillRect(x1, y1, width + 1, height + 1);
               //Draw a border
-                g.setColor(Color.RED);
+                g.setColor(Color.YELLOW);
                 g.drawRect(x1, y1, width, height);
+                g.setColor(Color.GRAY);
+                g.drawRect(x1+3, y1+3, width-6, height-6);
+                
     }
 }
